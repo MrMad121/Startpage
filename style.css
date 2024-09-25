@@ -1,0 +1,100 @@
+* {
+    font-family: Consolas;
+}
+
+body {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 20px;
+    user-select: none;
+    animation-name: logoAnimation;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    filter: drop-shadow(0px 0px 5px black);
+    animation-duration: 500ms;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-text {
+    color: white;
+    font-size: 8vh;
+    font-weight: 500;
+    -webkit-text-stroke: 2px black;
+}
+
+#google-logo {
+    display: none;
+}
+
+#search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #363636;
+    padding: 10px 15px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 5px black;
+}
+#search-box:active {
+    background-color: rgb(58, 58, 58);
+}
+
+#input-search {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 50vw;
+    height: 100%;
+    font-size: medium;
+    color: #c5c5c5;
+    padding-left: 10px;
+}
+#input-search::placeholder {
+    color: #a1a1a1;
+}
+main {
+    margin-top: 24vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+#ai-icon {
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    filter: drop-shadow(0px 0px 2px black);
+}
+a {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    height: 30px;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: translateY(-12vh);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(2vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

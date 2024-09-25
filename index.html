@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New tab</title>
+        <link rel="icon" type="image/x-icon" href="new_tab_icon.svg" />
+        <!-- <link rel="stylesheet" href="style.css" /> -->
+        <link rel="stylesheet" href="style_light.css" />
+    </head>
+    <body>
+        <main>
+            <div class="logo" id="bing-logo">
+                <img src="bing.svg" id="bing-icon" class="logo-icon" />
+                <h1 class="logo-text" id="bing-text">bing</h1>
+            </div>
+            <div class="logo" id="google-logo">
+                <img src="google.svg" id="google-icon" class="logo-icon" />
+                <h1 class="logo-text" id="google-text">Google</h1>
+            </div>
+            <form
+                id="search-box"
+                method="get"
+                action="https://www.bing.com/search"
+            >
+                <svg style="height: 1.4vw" viewBox="0 0 12 13">
+                    <g stroke-width="1" stroke="#c5c5c5" fill="none">
+                        <path d="M11.29 11.71l-4-4" />
+                        <circle cx="5" cy="5" r="4" />
+                    </g>
+                </svg>
+                <input
+                    type="text"
+                    id="input-search"
+                    placeholder="Bing search"
+                    name="q"
+                    required
+                />
+                <a
+                    href="https://copilot.microsoft.com/#"
+                    target="_blank"
+                    id="ai-link"
+                >
+                    <img src="copilot.svg" id="ai-icon" />
+                </a>
+            </form>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
